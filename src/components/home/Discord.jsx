@@ -14,8 +14,8 @@ const Discord = ({ discordInvite, discordOnline }) => {
             <div className="absolute inset-0 bg-[#5865F2]/20 blur-[80px] rounded-full scale-125 animate-pulse" />
             <motion.img
               src={mascot}
-              alt="SeaMC Discord mascot"
-              className="relative z-10 w-full max-w-[320px] mx-auto drop-shadow-[0_20px_40px_rgba(88,101,242,0.4)]"
+              alt="EclipseNetwork Discord mascot"
+              className="relative z-10 w-full max-w-[320px] mx-auto drop-shadow-[0_20px_40px_rgba(139,92,246,0.4)]"
               animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
               transition={{ y: { duration: 5, repeat: Infinity, ease: 'easeInOut' }, rotate: { duration: 10, repeat: Infinity, ease: 'easeInOut' } }}
             />
@@ -26,7 +26,7 @@ const Discord = ({ discordInvite, discordOnline }) => {
             <h2 className="text-5xl md:text-7xl font-display font-black text-white mb-6 leading-none tracking-tighter">
               UNISCITI ALLA <br /> <span className="text-[#5865F2]">COMMUNITY</span>
             </h2>
-            <p className="text-lg md:text-xl text-sky-100/70 font-light leading-relaxed mb-10 max-w-2xl">
+            <p className="text-lg md:text-xl text-violet-100/70 font-light leading-relaxed mb-10 max-w-2xl">
               Entra nel nostro Discord. Ricevi supporto, partecipa a eventi e scala i ranghi!
             </p>
 
@@ -35,7 +35,7 @@ const Discord = ({ discordInvite, discordOnline }) => {
                 href={discordInvite}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-10 py-5 bg-[#5865F2] hover:bg-[#4752c4] text-white font-display font-black text-xl rounded-2xl shadow-[0_10px_30px_rgba(88,101,242,0.4)] transition-all flex items-center gap-3"
+                className="px-10 py-5 bg-purple-500 hover:bg-purple-600 text-white font-display font-black text-xl rounded-2xl shadow-[0_10px_30px_rgba(139,92,246,0.4)] transition-all flex items-center gap-3"
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -47,7 +47,7 @@ const Discord = ({ discordInvite, discordOnline }) => {
 
               <div className="flex flex-col items-start">
                 <span className="text-3xl font-display font-black text-white">{discordOnline}</span>
-                <span className="text-xs uppercase tracking-[0.2em] font-bold text-sky-100/40">Membri Attivi</span>
+                <span className="text-xs uppercase tracking-[0.2em] font-bold text-violet-100/40">Membri Attivi</span>
               </div>
             </div>
           </div>

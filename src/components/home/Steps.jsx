@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FadeInView, StaggerContainer, StaggerItem, ScaleInView } from '../animations';
 import mcLogo from '../../assets/logo-minecraft.png';
+import { SITE_CONFIG } from '../../lib/constants';
 
 const steps = [
   {
@@ -9,7 +10,7 @@ const steps = [
   },
   {
     title: 'Aggiungi il server',
-    text: 'Inserisci l\'ip: play.seamc.it',
+    text: `Inserisci l'ip: ${SITE_CONFIG.serverIP}`,
   },
   {
     title: 'Entra e gioca',
@@ -23,20 +24,20 @@ const Steps = ({ serverIP, mcPlayers, discordOnline, copyToClipboard, copied }) 
       <FadeInView direction="up" duration={0.8}>
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-6xl font-display font-black text-white mb-4">Come Entrare</h2>
-          <div className="h-1.5 w-24 bg-ocean-400 mx-auto rounded-full" />
+          <div className="h-1.5 w-24 bg-purple-400 mx-auto rounded-full" />
         </div>
       </FadeInView>
 
       <StaggerContainer className="grid gap-8 md:grid-cols-3 max-w-7xl mx-auto" staggerDelay={0.15}>
         {steps.map((step, idx) => (
           <StaggerItem key={step.title}>
-            <motion.article className="relative glass-panel p-8 md:p-10 group/step border-white/5 hover:border-ocean-400/30 transition-all duration-300 h-full" whileHover={{ y: -10 }}>
-              <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-ocean-400 to-sea-glow rounded-2xl flex items-center justify-center font-display font-black text-3xl text-abyss-950 shadow-glow-cyan">
+            <motion.article className="relative glass-panel p-8 md:p-10 group/step border-white/5 hover:border-purple-400/30 transition-all duration-300 h-full" whileHover={{ y: -10 }}>
+              <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-purple-400 to-violet-400 rounded-2xl flex items-center justify-center font-display font-black text-3xl text-abyss-950 shadow-glow-purple">
                 {idx + 1}
               </div>
               <h3 className="text-2xl font-display font-bold text-white mb-4 mt-4">{step.title}</h3>
-              <p className="text-sky-100/60 leading-relaxed text-lg">{step.text}</p>
-              <div className="absolute bottom-0 right-0 w-32 h-32 bg-ocean-500/5 blur-3xl rounded-full group-hover/step:bg-ocean-500/10 transition-colors" />
+              <p className="text-violet-100/60 leading-relaxed text-lg">{step.text}</p>
+              <div className="absolute bottom-0 right-0 w-32 h-32 bg-purple-500/5 blur-3xl rounded-full group-hover/step:bg-purple-500/10 transition-colors" />
             </motion.article>
           </StaggerItem>
         ))}
@@ -51,10 +52,10 @@ const Steps = ({ serverIP, mcPlayers, discordOnline, copyToClipboard, copied }) 
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-ocean-500/10 via-transparent to-transparent opacity-0 group-hover/copy:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-transparent to-transparent opacity-0 group-hover/copy:opacity-100 transition-opacity" />
             <span className="text-[10px] uppercase tracking-[0.3em] text-white font-bold mb-2">Server IP</span>
             <div className="flex items-center gap-4">
-              <span className="text-3xl md:text-4xl font-display font-black text-ocean-400">{serverIP}</span>
+              <span className="text-3xl md:text-4xl font-display font-black text-purple-400">{serverIP}</span>
               <div className={`p-2 rounded-lg ${copied ? 'bg-emerald-500' : 'bg-white/10'} transition-colors`}>
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {copied ? (
@@ -65,16 +66,16 @@ const Steps = ({ serverIP, mcPlayers, discordOnline, copyToClipboard, copied }) 
                 </svg>
               </div>
             </div>
-            <p className="text-x mt-3 text-sky-100/40 font-medium">{copied ? 'Link Copiato' : 'Clicca per copiare l\'ip'}</p>
+            <p className="text-x mt-3 text-violet-100/40 font-medium">{copied ? 'Link Copiato' : 'Clicca per copiare l\'ip'}</p>
           </motion.button>
           
           <motion.article whileHover={{ scale: 1.02 }}>
             <div className="p-6 rounded-3xl border h-full border-white/5 bg-abyss-900/40 backdrop-blur-xl flex items-center gap-5">
-              <div className="w-14 h-14 rounded-2xl bg-sky-500/10 flex items-center justify-center p-3 border border-sky-500/20">
+              <div className="w-14 h-14 rounded-2xl bg-violet-500/10 flex items-center justify-center p-3 border border-violet-500/20">
                 <img src={mcLogo} alt="Minecraft" className="w-full scale-150 h-full object-contain" />
               </div>
               <div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-sky-400 font-bold">Online</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-violet-400 font-bold">Online</p>
                 <p className="text-3xl font-display font-black text-white">{mcPlayers}</p>
               </div>
             </div>

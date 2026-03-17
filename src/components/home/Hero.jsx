@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FadeInView } from '../animations';
 import logo from '../../assets/logo-server.png';
+import { SITE_CONFIG } from '../../lib/constants';
 
 const Hero = ({ discordInvite }) => {
   return (
@@ -33,23 +34,23 @@ const Hero = ({ discordInvite }) => {
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeInView direction="down" duration={1}>
           <div className="relative mb-12 group/logo">
-            <div className="absolute inset-0 bg-ocean-500/20 blur-[100px] rounded-full scale-150 animate-glow-pulse" />
+            <div className="absolute inset-0 bg-purple-500/20 blur-[100px] rounded-full scale-150 animate-glow-pulse" />
             <motion.div animate={{ y: [0, -15, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="relative z-10">
-              <img src={logo} alt="SeaMC logo" className="w-48 md:w-72 drop-shadow-[0_0_50px_rgba(20,184,166,0.5)] transition-transform duration-700 group-hover/logo:scale-110" />
+              <img src={logo} alt="EclipseNetwork logo" className="w-48 md:w-72 drop-shadow-[0_0_50px_rgba(168,85,247,0.5)] transition-transform duration-700 group-hover/logo:scale-110" />
             </motion.div>
           </div>
         </FadeInView>
 
         <FadeInView direction="up" delay={0.3} duration={0.8}>
           <h1 className="font-display font-black text-6xl md:text-9xl tracking-tighter leading-[0.85] text-white">
-            <span className="text-gradient-ocean">Sea</span>
-            <span className="relative">MC</span>
+            <span className="text-glow-purple">Eclipse </span>
+            <span className="relative">Network</span>
           </h1>
         </FadeInView>
 
         <FadeInView direction="up" delay={0.4} duration={0.8}>
-          <p className="mt-8 text-xl md:text-2xl text-sky-100/70 max-w-2xl leading-relaxed font-light">
-            Benvenuto nel network ufficiale di <span className="font-bold text-gradient-ocean">Sea</span><span className="text-white">MC</span>. Vieni a giocare con noi su <span className="text-ocean-300 font-semibold">play.seamc.it</span>, entra nelle nostre modalità e partecipa ai nuovi eventi con premi in palio.
+          <p className="mt-8 text-xl md:text-2xl text-violet-100/70 max-w-2xl leading-relaxed font-light">
+            Benvenuto nel network ufficiale di <span className="font-bold text-gradient-purple">Eclipse</span>. Vieni a giocare con noi su <span className="text-purple-300 font-semibold">{SITE_CONFIG.serverIP}</span>, entra nelle nostre modalità e partecipa ai nuovi eventi con premi in palio.
           </p>
         </FadeInView>
 
@@ -57,7 +58,7 @@ const Hero = ({ discordInvite }) => {
           <div className="mt-12 flex flex-wrap justify-center gap-4 md:gap-6">
             <motion.a
               href="#come-entrare"
-              className="sea-button px-8 md:px-12 py-4 md:py-5 text-lg md:text-xl font-display group relative overflow-hidden"
+              className="eclipse-button px-8 md:px-12 py-4 md:py-5 text-lg md:text-xl font-display group relative overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -88,7 +89,7 @@ const Hero = ({ discordInvite }) => {
       </div>
 
       <motion.div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex lg:hidden flex-col items-center gap-2" animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }}>
-        <div className="w-px h-8 bg-gradient-to-b from-ocean-400 to-transparent" />
+        <div className="w-px h-8 bg-gradient-to-b from-purple-400 to-transparent" />
       </motion.div>
     </section>
   );

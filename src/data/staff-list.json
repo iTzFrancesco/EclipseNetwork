@@ -1,32 +1,66 @@
 {
   "Owner": [
     {
-      "displayName": "Lollomondiale",
-      "mcName": "lollomondiale",
-      "description": "Dev & Pluginner"
+      "displayName": "𝕮𝖗𝖎𝖕𝖙𝖆𝖙𝖔𝖍",
+      "mcName": "criptato_",
+      "description": ""
     },
     {
-      "displayName": "Feter",
-      "mcName": "denis5568",
-      "description": "Dev & Pluginner"
-    },
-    {
-      "displayName": "Boxed",
-      "mcName": "boxed",
-      "description": "Owner"
+      "displayName": "importbase64",
+      "mcName": "importbase64",
+      "description": ""
     }
   ],
-  "Manager": [],
+  "Manager": [
+    {
+      "displayName": "iTzFrancesco",
+      "mcName": "iTzFrancesco7",
+      "description": ""
+    },
+    {
+      "displayName": "xqpr",
+      "mcName": "xqpr",
+      "description": ""
+    }
+  ],
   "Sr. Admin": [],
   "Admin": [],
   "Sr. Developer": [],
-  "Developer": [],
+  "Developer": [
+    {
+      "displayName": "FelpaBlack1",
+      "mcName": "FelpaBlack1",
+      "description": ""
+    },
+    {
+      "displayName": "Porcospinoexe",
+      "mcName": "porcospinoexe",
+      "description": ""
+    }
+  ],
   "Jr. Developer": [],
   "Builder": [],
   "Sr. Mod": [],
-  "Mod": [],
+  "Mod": [
+    {
+      "displayName": "ADDERALL",
+      "mcName": "Vinx_Y",
+      "description": ""
+    },
+    {
+      "displayName": "OᐯEᖇᗪEᗩTᕼ__",
+      "mcName": "overdeath__",
+      "description": ""
+    }
+  ],
   "Jr. Mod": [],
-  "Helper": [],
+  "Helper": [
+    {
+      "displayName": "Rushed",
+      "mcName": "spariti",
+      "description": ""
+    }
+  ],
   "Jr. Helper": [],
   "ChatMod": []
 }

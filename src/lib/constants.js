@@ -1,7 +1,8 @@
 export const SITE_CONFIG = {
-  serverIP: "play.seamc.it",
-  serverName: "SeaMC",
-  discordInvite: "https://discord.gg/HDxBHTjmcT",
+  serverIP: "play.eclipsenetwork.it",
+  serverName: "EclipseNetwork",
+  discordInvite: "https://discord.gg/cU6x8t49B3",
   discordInviteCode: "HDxBHTjmcT",
+  storeUrl: "https://store.eclipsenetwork.it",
   modesMaxWidth: "72rem",
 };
