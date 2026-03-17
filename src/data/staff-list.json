@@ -1,0 +1,32 @@
+{
+  "Owner": [
+    {
+      "displayName": "Lollomondiale",
+      "mcName": "lollomondiale",
+      "description": "Dev & Pluginner"
+    },
+    {
+      "displayName": "Feter",
+      "mcName": "denis5568",
+      "description": "Dev & Pluginner"
+    },
+    {
+      "displayName": "Boxed",
+      "mcName": "boxed",
+      "description": "Owner"
+    }
+  ],
+  "Manager": [],
+  "Sr. Admin": [],
+  "Admin": [],
+  "Sr. Developer": [],
+  "Developer": [],
+  "Jr. Developer": [],
+  "Builder": [],
+  "Sr. Mod": [],
+  "Mod": [],
+  "Jr. Mod": [],
+  "Helper": [],
+  "Jr. Helper": [],
+  "ChatMod": []
+}
