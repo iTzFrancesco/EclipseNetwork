@@ -120,10 +120,6 @@ const getGradientClass = (color) => {
     blue: 'text-gradient-blue',
     // ChatMod - rosa
     pink: 'text-gradient-pink',
-    // NON USATO - tenuto per uso futuro: oro, smeraldo, violetto
-    gold: 'text-gradient-gold',
-    emerald: 'text-gradient-emerald',
-    violet: 'text-gradient-violet',
   };
   return gradients[color] || 'text-gradient-purple';
 };
@@ -211,7 +207,7 @@ const Staff = () => {
           </p>
           
           <motion.a 
-            href={SITE_CONFIG.discordInvite} 
+            href="https://forms.gle/siyhkr2HMaU1dBoR8" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="eclipse-button px-10 py-5 text-xl font-display bg-purple-500/10 border-purple-400/30 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400/50"
