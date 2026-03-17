@@ -1,6 +1,6 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://seamc.it/sitemap.xml
+Sitemap: https://eclipsenetwork.it/sitemap.xml
 
 

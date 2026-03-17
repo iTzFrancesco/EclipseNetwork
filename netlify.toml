@@ -1,18 +1,18 @@
 [[redirects]]
-  from = "http://seamc.it/*"
-  to = "https://seamc.it/:splat"
+  from = "http://eclipsenetwork.i/*"
+  to = "https://eclipsenetwork.it/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.seamc.it/*"
-  to = "https://seamc.it/:splat"
+  from = "http://www.eclipsenetwork.it/*"
+  to = "https://eclipsenetwork.it/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://www.seamc.it/*"
-  to = "https://seamc.it/:splat"
+  from = "https://www.eclipsenetwork.i/*"
+  to = "https://eclipsenetwork.it/:splat"
   status = 301
   force = true
 
