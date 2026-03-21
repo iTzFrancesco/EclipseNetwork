@@ -27,7 +27,7 @@ const Layout = () => {
               <p className="text-violet-100/60 font-black tracking-[0.4em]">© All Rights Reserved 2026</p>
               <p className="text-violet-100/60 font-black tracking-[0.4em]">Non siamo affiliati con Mojang, AB.</p>
               <span className="text-violet-100/60 font-bold tracking-[0.2em] text-sm group">
-                By <a className="text-gradient-purple text-lg animate-pulse" href='https://traflix.netlify.app' target='__blank'>𝖎𝕿𝖟𝕱𝖗𝖆𝖓𝖈𝖊𝖘𝖈𝖔</a>
+                By <a className="text-gradient-purple text-lg animate-pulse" href='https://traflix.vercel.app' target='__blank'>𝖎𝕿𝖟𝕱𝖗𝖆𝖓𝖈𝖊𝖘𝖈𝖔</a>
               </span>
             </div>
           </div>
